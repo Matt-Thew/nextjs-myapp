@@ -46,20 +46,18 @@ export default function Intro() {
               </div>
             </div>
           </div>
-
-          {/* Team Member 3 */}
           <div className="col-md-3">
             <div className="team-card position-relative">
               <img
                 src="/images/jack.jpg"
-                alt="Ingrid Grant"
+                alt="Jack Nagell"
                 className="img-fluid"
               />
               <div className="team-overlay d-flex align-items-center justify-content-center">
                 <i className="bi bi-plus-circle-fill text-white fs-2"></i>
               </div>
               <div className="team-info text-center">
-                <h5 className="mt-3">INGRID GRANT</h5>
+                <h5 className="mt-3">JACK NAGELL</h5>
                 <p className="text-muted">Web Designer</p>
               </div>
             </div>
@@ -126,6 +124,7 @@ export default function Intro() {
           padding: 15px;
           z-index: 2;
           position: relative;
+          color: black;
         }
 
         .team-card:hover .team-info {

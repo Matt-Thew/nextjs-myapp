@@ -1,22 +1,36 @@
 "use client";
-import Link from 'next/link';
-import { useEffect } from 'react';
+import Link from "next/link";
+import { useEffect } from "react";
+import { FaShip } from "react-icons/fa";
 
 const Header = () => {
   useEffect(() => {
     // Import Bootstrap's JavaScript for functionality like dropdowns
-    import('bootstrap/dist/js/bootstrap.bundle.min.js');
+    import("bootstrap/dist/js/bootstrap.bundle.min.js");
   }, []);
 
   return (
     <header>
       <div className="container-fluid p-0">
-
         {/* Navbar */}
-        <nav className="navbar navbar-expand-lg navbar-light" style={{ backgroundColor: '#008f7a' }}>
+        <nav
+          className="navbar navbar-expand-lg navbar-light bg-transparent"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            zIndex: 10,
+            backgroundColor: "transparent",
+          }}
+        >
           <div className="container">
-            <Link href="/" className="navbar-brand text-white">
-                Malliance
+            {/* Logo */}
+            <Link href="/" className="navbar-brand d-flex align-items-center">
+              <FaShip className="text-white" size={30} />
+              <span className="text-white fw-bold">
+                MARITIME <span className="text-primary">ALLIANCE</span>
+              </span>
             </Link>
             <button
               className="navbar-toggler"
@@ -30,50 +44,42 @@ const Header = () => {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav ms-auto">
-                <li className="nav-item">
-                  <Link href="/" className="nav-link text-white">
+              <ul className="navbar-nav mx-auto">
+                <li className="nav-item px-3">
+                  <Link href="/" className="nav-link text-white text-uppercase">
                     Home
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link href="/about" className="nav-link text-white">
-                    About
+                <li className="nav-item px-3">
+                  <Link
+                    href="/about"
+                    className="nav-link text-white text-uppercase"
+                  >
+                    About Us
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link href="/team" className="nav-link text-white">
-                    Team
+                <li className="nav-item px-3">
+                  <Link
+                    href="/services"
+                    className="nav-link text-white text-uppercase"
+                  >
+                    Service
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link href="/portfolio" className="nav-link text-white">
-                    Portfolio
+                <li className="nav-item px-3">
+                  <Link
+                    href="/news"
+                    className="nav-link text-white text-uppercase"
+                  >
+                    News
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link href="/services" className="nav-link text-white">
-                    Services
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link href="/blog" className="nav-link text-white">
-                    Blog
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link href="/pricing" className="nav-link text-white">
-                    Pricing
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link href="/contacts" className="nav-link text-white">
-                    Contacts
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link href="/shortcodes" className="nav-link text-white">
-                    Shortcodes
+                <li className="nav-item px-3">
+                  <Link
+                    href="/contact"
+                    className="nav-link text-white text-uppercase"
+                  >
+                    Contact
                   </Link>
                 </li>
               </ul>
@@ -83,17 +89,34 @@ const Header = () => {
       </div>
 
       <style jsx>{`
-        .btn-buy-now {
-          background-color: #4caf50;
-          color: #fff;
+        .navbar {
+          padding: 10px 0;
+          background: transparent !important;
+        }
+        .navbar-brand span {
+          font-size: 18px;
+          letter-spacing: 1px;
+        }
+        .nav-link {
+          font-size: 14px;
+          letter-spacing: 1px;
+          transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+          color: #bac8e0;
+        }
+        .btn-language {
+          background-color: #3b82f6;
+          color: white;
+          border-radius: 50%;
           border: none;
-        }
-        .btn-buy-now:hover {
-          background-color: #45a049;
-        }
-        .navbar-brand {
+          width: 40px;
+          height: 40px;
+          font-size: 14px;
           font-weight: bold;
-          font-size: 24px;
+        }
+        .btn-language:hover {
+          background-color: #2563eb;
         }
       `}</style>
     </header>
