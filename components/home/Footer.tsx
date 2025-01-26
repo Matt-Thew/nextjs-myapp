@@ -11,31 +11,34 @@ export default function Footer() {
           <div className="col-md-4 mb-3 mb-md-0">
             <ul className="list-inline">
               <li className="list-inline-item">
-                <Link href="#home" className="text-white text-uppercase small">
+                <Link href="/#home" className="text-white text-uppercase small">
                   Home
                 </Link>
               </li>
               <li className="list-inline-item mx-3">
-                <Link href="#about" className="text-white text-uppercase small">
+                <Link
+                  href="/#about"
+                  className="text-white text-uppercase small"
+                >
                   About Us
                 </Link>
               </li>
               <li className="list-inline-item mx-3">
                 <Link
-                  href="#services"
+                  href="/#services"
                   className="text-white text-uppercase small"
                 >
                   Service
                 </Link>
               </li>
               <li className="list-inline-item mx-3">
-                <Link href="#news" className="text-white text-uppercase small">
+                <Link href="/#news" className="text-white text-uppercase small">
                   News
                 </Link>
               </li>
               <li className="list-inline-item">
                 <Link
-                  href="#contact"
+                  href="/#contact"
                   className="text-white text-uppercase small"
                 >
                   Contact
