@@ -12,14 +12,14 @@ export default function Home() {
   return (
     <>
       <Header />
-      <Carousel />
+      {/* <Carousel />
       <Intro />
       <Team />
       <Services />
       <BlogSection />
       <ParallaxEffect />
       <ContactUs />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
