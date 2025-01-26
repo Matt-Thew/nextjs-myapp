@@ -1,5 +1,5 @@
 // import Carousel from "../components/Carousel";
-// import Header from "../components/Header";
+import Header from "../components/Header";
 // import ContactUs from "../components/home/ContactUs";
 // import Footer from "../components/home/Footer";
 // import Intro from "../components/home/Intro";
@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       Test
-      {/* <Header /> */}
+      <Header />
       {/* <Carousel />
       <Intro />
       <Team />
