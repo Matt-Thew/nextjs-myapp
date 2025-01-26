@@ -1,4 +1,4 @@
-// import Carousel from "../components/Carousel";
+import Carousel from "../components/Carousel";
 import Header from "../components/Header";
 // import ContactUs from "../components/home/ContactUs";
 // import Footer from "../components/home/Footer";
@@ -13,6 +13,7 @@ export default function Home() {
     <>
       Test
       <Header />
+      <Carousel />
       {/* <Carousel />
       <Intro />
       <Team />

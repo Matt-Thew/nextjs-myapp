@@ -1,6 +1,6 @@
 "use client";
 
-export default function Carousel() {
+const Carousel = () => {
   return (
     <section className="carousel" id="home">
       <div
@@ -152,4 +152,6 @@ export default function Carousel() {
       `}</style>
     </section>
   );
-}
+};
+
+export default Carousel;
