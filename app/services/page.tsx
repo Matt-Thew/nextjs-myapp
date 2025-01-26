@@ -19,7 +19,7 @@ export default function MaritimePage() {
       <ParallaxEffect />
       <main className="maritime-page">
         {/* Hero Section */}
-        <section className="hero text-center py-5 text-dark">
+        <section className="hero text-center py-5 text-dark bg-light">
           <h1>FLEXIBLE TRANSPORT SOLUTIONS</h1>
           <h2>WE COLLECT, WE STORE, WE SHIP, DOOR TO DOOR</h2>
           <p className="description">
@@ -65,66 +65,137 @@ export default function MaritimePage() {
               <p>INSURANCE</p>
             </div>
           </div>
-        </section>
 
-        {/* Q&A Section */}
-        <section className="qa-section text-center py-5 bg-light text-dark">
-          <h1>Q</h1>
-          <h2>WHY USE MARITIME ALLIANCE?</h2>
-          <hr className="divider" />
-          <h1>A</h1>
-          <p>= S.H.I.P</p>
+          <style jsx>{`
+            .hero {
+              background-color: #f8f9fa;
+            }
+            .hero h1,
+            .hero h2 {
+              margin-bottom: 15px;
+            }
+            .description {
+              max-width: 800px;
+              margin: 0 auto;
+              font-size: 16px;
+              line-height: 1.6;
+            }
+
+            .services .icons-container,
+            .services .additional-icons {
+              display: flex;
+              justify-content: center;
+              gap: 30px;
+              margin-top: 30px;
+            }
+            .services .icon {
+              text-align: center;
+            }
+            .divider {
+              margin: 20px auto;
+              width: 100px;
+              border: 1px solid #007bff;
+            }
+
+            .qa-section h1,
+            .qa-section h2 {
+              margin-bottom: 10px;
+            }
+
+            .features {
+              display: grid;
+              grid-template-columns: repeat(4, 1fr);
+              gap: 20px;
+            }
+            .feature {
+              text-align: center;
+            }
+            .feature h3 {
+              font-size: 36px;
+            }
+          `}</style>
         </section>
+      </main>
+      <section className="qa-section text-center py-5 bg-light text-dark">
+        <div className="container">
+          <div className="qa-row">
+            <h1 className="qa-letter">Q</h1>
+            <h2 className="qa-question">WHY USE MARITIME ALLIANCE?</h2>
+          </div>
+          <hr className="qa-divider" />
+          <div className="qa-row">
+            <h1 className="qa-letter">A</h1>
+            <p className="qa-answer">= S.H.I.P</p>
+          </div>
+        </div>
 
         <style jsx>{`
-          .hero {
-            background-color: #f8f9fa;
+          .qa-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
           }
-          .hero h1,
-          .hero h2 {
-            margin-bottom: 15px;
+
+          .qa-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
           }
-          .description {
+
+          .qa-letter {
+            font-size: 4rem;
+            font-weight: bold;
+            margin: 0;
+            color: #000;
+          }
+
+          .qa-question {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #555;
+            margin: 0;
+          }
+
+          .qa-divider {
+            width: 100px;
+            height: 2px;
+            background-color: #007bff;
+            border: none;
+            margin: 20px auto;
+          }
+
+          .qa-answer {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #555;
+            margin: 0;
+          }
+
+          .container {
             max-width: 800px;
             margin: 0 auto;
-            font-size: 16px;
-            line-height: 1.6;
-          }
-
-          .services .icons-container,
-          .services .additional-icons {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 30px;
-          }
-          .services .icon {
             text-align: center;
           }
-          .divider {
-            margin: 20px auto;
-            width: 100px;
-            border: 1px solid #007bff;
-          }
 
-          .qa-section h1,
-          .qa-section h2 {
-            margin-bottom: 10px;
-          }
+          @media (max-width: 768px) {
+            .qa-row {
+              flex-direction: column;
+            }
 
-          .features {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-          }
-          .feature {
-            text-align: center;
-          }
-          .feature h3 {
-            font-size: 36px;
+            .qa-letter {
+              font-size: 3rem;
+            }
+
+            .qa-question,
+            .qa-answer {
+              font-size: 1.2rem;
+            }
           }
         `}</style>
-      </main>
+      </section>
 
       {/* Service Highlights Section */}
       <section className="feature-strength text-center py-5 bg-light text-dark">
