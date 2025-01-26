@@ -16,7 +16,16 @@ export default function Carousel() {
               alt="..."
             />
             <div className="carousel-caption">
-              <h1 className="text-white animate-text">AND DO WHAT WE LOVE!</h1>
+              <h1 className="text-white animate-text">
+                JOIN US FOR THE <br />
+                <span className="highlight">BETTER FUTURE</span>
+              </h1>
+              <p className="text-white description">
+                We provide professional logistics services that include sea
+                freight & airfreight management, containerization,
+                consolidation, warehousing, customs clearance, and
+                transportation.
+              </p>
             </div>
           </div>
           <div className="carousel-item">
@@ -27,8 +36,15 @@ export default function Carousel() {
             />
             <div className="carousel-caption">
               <h1 className="text-white animate-text">
-                CREATE BEAUTIFUL MOMENTS!
+                JOIN US FOR THE <br />
+                <span className="highlight">BETTER FUTURE</span>
               </h1>
+              <p className="text-white description">
+                We provide professional logistics services that include sea
+                freight & airfreight management, containerization,
+                consolidation, warehousing, customs clearance, and
+                transportation.
+              </p>
             </div>
           </div>
         </div>
@@ -66,6 +82,7 @@ export default function Carousel() {
           right: 0;
           position: absolute;
           display: flex;
+          flex-direction: column;
           justify-content: center;
           align-items: center;
           text-align: center;
@@ -73,6 +90,24 @@ export default function Carousel() {
 
         .animate-text {
           animation: slideIn 1.5s ease-in-out forwards;
+          font-size: 2.5rem;
+          font-weight: bold;
+          text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .highlight {
+          color: #ffd700; /* Yellow color */
+          font-size: 3rem; /* Make BETTER FUTURE larger */
+          font-weight: bold;
+          text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
+        }
+
+        .description {
+          font-size: 1rem;
+          margin-top: 15px;
+          line-height: 1.6;
+          max-width: 800px;
+          text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
         }
 
         @keyframes slideIn {
@@ -86,10 +121,16 @@ export default function Carousel() {
           }
         }
 
-        h1 {
-          font-size: 2.5rem;
-          font-weight: bold;
-          text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        @media (max-width: 768px) {
+          .animate-text {
+            font-size: 2rem;
+          }
+          .highlight {
+            font-size: 10rem;
+          }
+          .description {
+            font-size: 0.9rem;
+          }
         }
       `}</style>
     </section>
