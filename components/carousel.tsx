@@ -11,7 +11,7 @@ export default function Carousel() {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img
-              src="/images/shipping.webp"
+              src="/images/shipping2.webp"
               className="d-block w-100"
               alt="..."
             />
@@ -21,7 +21,7 @@ export default function Carousel() {
           </div>
           <div className="carousel-item">
             <img
-              src="/images/shipping2.webp"
+              src="/images/shipping3.webp"
               className="d-block w-100"
               alt="..."
             />
