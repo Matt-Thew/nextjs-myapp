@@ -1,6 +1,6 @@
 "use client";
 
-export default function AboutUs() {
+export default function Intro() {
   return (
     <section className="py-5 bg-white text-dark" id="about">
       <div className="container text-center">

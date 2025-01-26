@@ -1,5 +1,5 @@
 "use client";
-export default function Intro() {
+export default function Team() {
   return (
     <section className="team-section py-5 bg-light">
       <div className="container text-center">

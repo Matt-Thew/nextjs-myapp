@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-export default function BlogSection() {
+export default function News() {
   const blogs = [
     {
       image: "/images/placeholder.svg",
