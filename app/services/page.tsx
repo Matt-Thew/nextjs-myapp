@@ -4,7 +4,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/home/Footer";
 import ParallaxEffect from "@/components/home/ParallaxEffect";
 import {
-  HiOutlineTruck,
   HiOutlineGlobeAlt,
   HiOutlineDocumentText,
   HiOutlineShieldCheck,
@@ -206,7 +205,7 @@ export default function MaritimePage() {
               <p className="feature-title">SPEED</p>
               <p className="feature-description">
                 Maritime Alliance ensures accurate and timely submissions for
-                clients' official documentation.
+                client official documentation.
               </p>
             </div>
             <div className="col-md-3 col-6 feature">
