@@ -2,7 +2,7 @@
 
 export default function Carousel() {
   return (
-    <section className="carousel">
+    <section className="carousel" id="home">
       <div
         id="carouselExample"
         className="carousel slide"

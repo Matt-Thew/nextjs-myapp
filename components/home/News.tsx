@@ -31,7 +31,7 @@ export default function BlogSection() {
   ];
 
   return (
-    <section className="blog-section py-5">
+    <section className="blog-section py-5" id="news">
       <div className="container text-center">
         {/* Section Title */}
         <h2 className="text-primary">LATEST FROM THE BLOG</h2>

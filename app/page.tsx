@@ -1,6 +1,7 @@
 import Carousel from "@/components/carousel";
 import Header from "@/components/Header";
 import ContactUs from "@/components/Home/ContactUs";
+import Footer from "@/components/Home/Footer";
 import Intro from "@/components/Home/Intro";
 import BlogSection from "@/components/Home/News";
 import ParallaxEffect from "@/components/Home/ParallaxEffect";
@@ -18,6 +19,7 @@ export default function Home() {
       <BlogSection />
       <ParallaxEffect />
       <ContactUs />
+      <Footer />
     </>
   );
 }

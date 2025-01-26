@@ -1,7 +1,7 @@
 "use client";
 export default function Intro() {
   return (
-    <section className="container my-5">
+    <section className="container my-5" id="about">
       <div className="row align-items-center">
         {/* Left Section: Image */}
         <div className="col-md-6 text-center">

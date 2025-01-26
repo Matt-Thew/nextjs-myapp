@@ -2,7 +2,7 @@
 
 export default function ContactUs() {
   return (
-    <section className="contact-us py-5">
+    <section className="contact-us py-5" id="contact">
       <div className="container d-flex justify-content-center align-items-start">
         {/* Google Map Section */}
         <div className="map-container">

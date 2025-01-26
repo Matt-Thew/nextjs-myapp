@@ -41,7 +41,7 @@ export default function Services() {
     { icon: FaShieldAlt, label: "INSURANCE" },
   ];
   return (
-    <section className="services py-5">
+    <section className="services py-5" id="services">
       <div className="container text-center position-relative">
         {/* Section Title */}
         <h2 className="text-primary mb-3">SERVICES</h2>

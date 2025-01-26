@@ -46,13 +46,16 @@ const Header = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav mx-auto">
                 <li className="nav-item px-3">
-                  <Link href="/" className="nav-link text-white text-uppercase">
+                  <Link
+                    href="#home"
+                    className="nav-link text-white text-uppercase"
+                  >
                     Home
                   </Link>
                 </li>
                 <li className="nav-item px-3">
                   <Link
-                    href="/about"
+                    href="#about"
                     className="nav-link text-white text-uppercase"
                   >
                     About Us
@@ -60,7 +63,7 @@ const Header = () => {
                 </li>
                 <li className="nav-item px-3">
                   <Link
-                    href="/services"
+                    href="#services"
                     className="nav-link text-white text-uppercase"
                   >
                     Service
@@ -68,7 +71,7 @@ const Header = () => {
                 </li>
                 <li className="nav-item px-3">
                   <Link
-                    href="/news"
+                    href="#news"
                     className="nav-link text-white text-uppercase"
                   >
                     News
@@ -76,7 +79,7 @@ const Header = () => {
                 </li>
                 <li className="nav-item px-3">
                   <Link
-                    href="/contact"
+                    href="#contact"
                     className="nav-link text-white text-uppercase"
                   >
                     Contact
