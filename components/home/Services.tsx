@@ -3,33 +3,15 @@
 import Link from "next/link";
 import {
   FaPlane, // Air Freight
-  FaShip, // Sea Freight
   FaGlobe, // International & Domestic
   FaFileInvoice, // Customs Clearance
   FaShippingFast, // One-off Shipments
-  FaBoxOpen, // Project Cargo
-  FaSkullCrossbones, // Dangerous Goods
   FaTruck, // Door-to-Door Deliveries
-  FaWarehouse, // Warehouse
-  FaShieldAlt, // Insurance
 } from "react-icons/fa";
 
 import { HiOutlineTruck } from "react-icons/hi";
 
 export default function Services() {
-  const services = [
-    { icon: FaPlane, label: "AIR FREIGHT" },
-    { icon: FaShip, label: "SEA FREIGHT" },
-    { icon: FaTruck, label: "ROAD FREIGHT" },
-    { icon: FaGlobe, label: "INTERNATIONAL & DOMESTIC" },
-    { icon: FaFileInvoice, label: "CUSTOMS CLEARANCE" },
-    { icon: FaShippingFast, label: "ONE-OFF SHIPMENTS" },
-    { icon: FaBoxOpen, label: "PROJECT CARGO" },
-    { icon: FaSkullCrossbones, label: "DANGEROUS GOODS" },
-    { icon: FaTruck, label: "DOOR-TO-DOOR DELIVERIES" },
-    { icon: FaWarehouse, label: "WAREHOUSE" },
-    { icon: FaShieldAlt, label: "INSURANCE" },
-  ];
   return (
     <section className="services py-5" id="services">
       <div className="container text-center position-relative">

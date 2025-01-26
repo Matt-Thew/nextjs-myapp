@@ -1,8 +1,8 @@
 "use client";
 
 import Header from "@/components/Header";
-import Footer from "@/components/Home/Footer";
-import ParallaxEffect from "@/components/Home/ParallaxEffect";
+import Footer from "@/components/home/Footer";
+import ParallaxEffect from "@/components/home/ParallaxEffect";
 
 export default function BlogPosts() {
   const blogs = [
