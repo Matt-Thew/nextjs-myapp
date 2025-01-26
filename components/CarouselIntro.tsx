@@ -1,6 +1,6 @@
 "use client";
 
-const Carousel = () => {
+const CarouselIntro = () => {
   return (
     <section className="carousel" id="home">
       <div
@@ -154,4 +154,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default CarouselIntro;
