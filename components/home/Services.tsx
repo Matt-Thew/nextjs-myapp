@@ -14,18 +14,7 @@ import {
   FaShieldAlt, // Insurance
 } from "react-icons/fa";
 
-import {
-  HiOutlinePaperAirplane,
-  HiOutlineTruck,
-  HiOutlineGlobeAlt,
-  HiOutlineDocumentText,
-  HiOutlineInboxArrowDown,
-  HiOutlineCube,
-  HiOutlineExclamation,
-  HiOutlineLocationMarker,
-  HiOutlineOfficeBuilding,
-  HiOutlineShieldCheck,
-} from "react-icons/hi";
+import { HiOutlineTruck } from "react-icons/hi";
 
 export default function Services() {
   const services = [

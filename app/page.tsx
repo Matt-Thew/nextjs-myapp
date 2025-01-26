@@ -1,4 +1,4 @@
-import Carousel from "@/components/carousel";
+import Carousel from "@/components/Carousel";
 import Header from "@/components/Header";
 import ContactUs from "@/components/Home/ContactUs";
 import Footer from "@/components/Home/Footer";
