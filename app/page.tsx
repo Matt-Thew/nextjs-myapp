@@ -6,7 +6,7 @@ import Intro from "@/components/home/Intro";
 import News from "@/components/home/News";
 import ParallaxEffect from "@/components/home/ParallaxEffect";
 import Services from "@/components/home/Services";
-import Team from "@/components/home/Team";
+import MyTeam from "@/components/home/MyTeam";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <CarouselIntro />
 
       <Intro />
-      <Team />
+      <MyTeam />
       <Services />
       <News />
       <ParallaxEffect />
