@@ -13,7 +13,7 @@ export default function Carousel() {
             <img
               src="/images/shipping2.webp"
               className="d-block w-100"
-              alt="..."
+              alt="Shipping 2"
             />
             <div className="carousel-caption">
               <h1 className="text-white animate-text">
@@ -32,7 +32,7 @@ export default function Carousel() {
             <img
               src="/images/shipping3.webp"
               className="d-block w-100"
-              alt="..."
+              alt="Shipping 3"
             />
             <div className="carousel-caption">
               <h1 className="text-white animate-text">
@@ -87,7 +87,6 @@ export default function Carousel() {
           align-items: center;
           text-align: center;
         }
-
         .animate-text {
           animation: slideIn 1.5s ease-in-out forwards;
           font-size: 2.5rem;
@@ -97,17 +96,19 @@ export default function Carousel() {
 
         .highlight {
           color: #ffd700; /* Yellow color */
-          font-size: 3rem; /* Make BETTER FUTURE larger */
+          font-size: 3rem;
           font-weight: bold;
           text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7);
         }
 
         .description {
-          font-size: 1rem;
-          margin-top: 15px;
-          line-height: 1.6;
-          max-width: 800px;
-          text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+          font-size: 1rem; /* Adjust font size for readability */
+          line-height: 1.6; /* Ensure proper spacing between lines */
+          max-width: 600px; /* Restrict width for better line breaks */
+          margin-top: 15px; /* Add spacing from other elements */
+          word-wrap: break-word; /* Ensure words break if too long */
+          text-align: center; /* Center-align the text */
+          text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); /* Add subtle shadow for readability */
         }
 
         @keyframes slideIn {
@@ -123,13 +124,29 @@ export default function Carousel() {
 
         @media (max-width: 768px) {
           .animate-text {
-            font-size: 2rem;
+            font-size: 1.8rem; /* Smaller for mobile */
+            line-height: 1.1; /* Adjust line height */
           }
           .highlight {
-            font-size: 10rem;
+            font-size: 2rem;
           }
           .description {
             font-size: 0.9rem;
+            line-height: 1.3;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .animate-text {
+            font-size: 1.5rem;
+            line-height: 1;
+          }
+          .highlight {
+            font-size: 1.8rem;
+          }
+          .description {
+            font-size: 0.8rem;
+            line-height: 1.2;
           }
         }
       `}</style>

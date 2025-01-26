@@ -7,6 +7,8 @@ const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
+    import("bootstrap/dist/js/bootstrap.bundle.min.js");
+
     const handleScroll = () => {
       if (window.scrollY > 0) {
         setIsSticky(true);

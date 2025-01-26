@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import {
   FaPlane, // Air Freight
   FaShip, // Sea Freight
@@ -57,7 +58,7 @@ export default function Services() {
           <div className="d-flex flex-wrap justify-content-center mx-3">
             <div className="service-item mx-4">
               <div className="icon-container">
-                <HiOutlinePaperAirplane className="icon" size={48} />
+                <FaPlane className="icon" size={48} />
               </div>
               <p className="mt-2">AIR FREIGHT</p>
             </div>
@@ -93,6 +94,9 @@ export default function Services() {
             </div>
           </div>
         </div>
+        <button className="btn btn-outline-primary mt-3">
+          <Link href="/services">VIEW ALL SERVICES</Link>
+        </button>
       </div>
 
       <style jsx>{`
